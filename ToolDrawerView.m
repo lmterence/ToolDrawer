@@ -304,7 +304,12 @@
 #pragma mark
 
 - (void)didMoveToSuperview{
+    
+    NSLog(@"%s", __FUNCTION__);
+    
     CGRect r = self.superview.bounds;
+    
+    NSLog(@"%s, rect:%@", __FUNCTION__, NSStringFromCGRect(self.superview.bounds));
     CGFloat w = r.size.width / 2.0;
     CGFloat h = r.size.height / 2.0;
     
@@ -347,12 +352,14 @@
 }
 
 - (void)open{
+    NSLog(@"%s", __FUNCTION__);
     if (![self isOpen]){
         [self updatePosition];
     }
 }
 
 - (void)close{
+    NSLog(@"%s", __FUNCTION__);
     if ([self isOpen]){
         [self updatePosition];
     }
@@ -360,13 +367,16 @@
 
 - (void)computePositions{
     int itemCount = self.subviews.count - 1;
-    
+     NSLog(@"%s, rect:%@", __FUNCTION__, NSStringFromCGRect(self.bounds));
     openPosition = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
     closePosition = CGPointMake(openPosition.x - (50.0 * itemCount), openPosition.y);
+    NSLog(@"1 %s, openPosition:%@", __FUNCTION__, NSStringFromCGPoint(openPosition));
+     NSLog(@"1 %s, closePosition:%@", __FUNCTION__, NSStringFromCGPoint(closePosition));
     
     openPosition = CGPointApplyAffineTransform(openPosition, positionTransform);
     closePosition = CGPointApplyAffineTransform(closePosition, positionTransform);
-    
+    NSLog(@"2 %s, openPosition:%@", __FUNCTION__, NSStringFromCGPoint(openPosition));
+    NSLog(@"2 %s, closePosition:%@", __FUNCTION__, NSStringFromCGPoint(closePosition));
     self.center = closePosition;
 }
 
@@ -382,9 +392,9 @@
                          } else {
                              self.center = openPosition;
                          }
-                         
+                         NSLog(@"1%s", __FUNCTION__);
                          open = !open;
-                         
+                         NSLog(@"2%s", __FUNCTION__);
                          // If the toolbar isn't at full brightness, ie alpha = 1.0, set it to 1.0
                          if (self.alpha != 1.0){
                              self.alpha = 1.0;

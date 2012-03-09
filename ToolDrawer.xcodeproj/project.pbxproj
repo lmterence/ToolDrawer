@@ -16,6 +16,9 @@
 		79745BB113D31E800065EF70 /* ToolDrawerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79745BB013D31E800065EF70 /* ToolDrawerAppDelegate.m */; };
 		79745BB413D31E800065EF70 /* ToolDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79745BB313D31E800065EF70 /* ToolDrawerViewController.m */; };
 		79745BB713D31E800065EF70 /* ToolDrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79745BB513D31E800065EF70 /* ToolDrawerViewController.xib */; };
+		EA6C40D01508C05400C49474 /* HTToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C40CF1508C05400C49474 /* HTToolbar.m */; };
+		EA8C60411509DE22000E0A2C /* HTPDFMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8C60401509DE22000E0A2C /* HTPDFMenu.m */; };
+		EA8C60441509E2F6000E0A2C /* HTPDFMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8C60431509E2F6000E0A2C /* HTPDFMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		79745BB213D31E800065EF70 /* ToolDrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolDrawerViewController.h; sourceTree = "<group>"; };
 		79745BB313D31E800065EF70 /* ToolDrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolDrawerViewController.m; sourceTree = "<group>"; };
 		79745BB613D31E800065EF70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ToolDrawerViewController.xib; sourceTree = "<group>"; };
+		EA6C40CE1508C05400C49474 /* HTToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTToolbar.h; sourceTree = "<group>"; };
+		EA6C40CF1508C05400C49474 /* HTToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTToolbar.m; sourceTree = "<group>"; };
+		EA8C603F1509DE22000E0A2C /* HTPDFMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTPDFMenu.h; sourceTree = "<group>"; };
+		EA8C60401509DE22000E0A2C /* HTPDFMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTPDFMenu.m; sourceTree = "<group>"; };
+		EA8C60431509E2F6000E0A2C /* HTPDFMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTPDFMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,11 @@
 				791AACE413D3290500ADD2D2 /* ToolDrawerView.h */,
 				791AACE513D3290500ADD2D2 /* ToolDrawerView.m */,
 				79745BA713D31E800065EF70 /* Supporting Files */,
+				EA6C40CE1508C05400C49474 /* HTToolbar.h */,
+				EA6C40CF1508C05400C49474 /* HTToolbar.m */,
+				EA8C603F1509DE22000E0A2C /* HTPDFMenu.h */,
+				EA8C60401509DE22000E0A2C /* HTPDFMenu.m */,
+				EA8C60431509E2F6000E0A2C /* HTPDFMenu.xib */,
 			);
 			path = ToolDrawer;
 			sourceTree = "<group>";
@@ -156,6 +169,7 @@
 			files = (
 				79745BAB13D31E800065EF70 /* InfoPlist.strings in Resources */,
 				79745BB713D31E800065EF70 /* ToolDrawerViewController.xib in Resources */,
+				EA8C60441509E2F6000E0A2C /* HTPDFMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +184,8 @@
 				79745BB113D31E800065EF70 /* ToolDrawerAppDelegate.m in Sources */,
 				79745BB413D31E800065EF70 /* ToolDrawerViewController.m in Sources */,
 				791AACE613D3290500ADD2D2 /* ToolDrawerView.m in Sources */,
+				EA6C40D01508C05400C49474 /* HTToolbar.m in Sources */,
+				EA8C60411509DE22000E0A2C /* HTPDFMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

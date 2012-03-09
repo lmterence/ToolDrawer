@@ -18,7 +18,21 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #import <UIKit/UIKit.h>
+#import "HTPDFMenu.h"
+#import "HTToolbar.h"
 
-@interface ToolDrawerViewController : UIViewController
+@interface ToolDrawerViewController : UIViewController {
+    
+    HTPDFMenu *menu;
+    HTToolbar *htToolbar;
+    
+    CGPoint openPosition;
+    CGPoint closePosition;
+}
+
+@property (strong, nonatomic) IBOutlet HTPDFMenu *menu;
+
+@property (strong, nonatomic) IBOutlet UIButton *handleButton;
+- (IBAction)updatePosition:(id)sender;
 
 @end
